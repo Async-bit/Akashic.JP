@@ -1,0 +1,165 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FFFFCC;
+}
+.body{
+    background-color: 	#CCFFFF;
+    text-align: center;
+    color: lightgreen;
+    text-decoration: none;
+    font-weight: bold;
+    height: 400px;
+    transition: all 0.2ms;
+}
+
+.body:hover {
+    animation-name:fadeRightAnime;
+    animation-duration: 4s;
+    animation-fill-mode:forwards;
+    opacity:0;
+    }
+    
+    @keyframes fadeRightAnime{
+      from {
+        opacity: 0;
+      transform: translateX(100px);
+      }
+    
+      to {
+        opacity: 1;
+      transform: translateX(0);
+      }
+    }
+
+.name_two {
+    color: lightpink;
+    text-align: center;
+    margin: 0px 0px 10px 0px;
+    font-family: "MS Mincho";
+    font-size: 30px;
+      }
+
+.name_three{
+    color: #FFD5EC;
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+}
+
+.btn_two{
+    height: 200px;
+    background-color: lightgreen;
+    color: lightcyan;
+    padding: 20px 50px;
+    text-decoration: none;
+    transition: all 0.7s;
+}
+
+.btn_two:hover{
+    border-radius: 20px;
+    background-color: lightseagreen;
+}
+.hedtag{
+     height: 150px;
+     width: 100%;
+     background: lightblue;
+     transition: all 0.2ms;
+     align-items: left;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px 8% 0 8%;
+}
+
+@keyframes gradient {
+    100% {
+    background-position: 0% 50%
+    }
+    100% {
+    background-position: 100% 50%
+    }
+    100% {
+    background-position: 1000% 50%
+    }
+    }
+    
+    .logo {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    display: block;
+    border-radius: 50%;
+    line-height: 110px;
+    width: 110px;
+    text-align: center;
+    color: #fff;
+    color: azure;
+    font-size: 35px;
+    cursor: pointer;
+    }
+
+
+span {
+    color: #FF66FF;
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 10px 25px;
+    font-size: 20px;
+}
+
+nav ul li a{
+   color: white;
+   text-decoration: none;
+   font-weight: hold;
+   transition: all 0.6s;
+}
+
+nav ul li a:hover{
+    color: lawngreen;
+}
+
+.btn {
+    background-color: lightgreen;
+    color: lightcyan;
+    padding: 20px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.7s;
+}
+
+.btn:hover {
+    border-radius: 20px;
+    background-color: lightseagreen;
+}
+
+.My {
+    display: inline-block;
+    padding: .5em 2.5em;
+    border: none;
+    border-radius: .25em;
+    color: #fff;
+    background: linear-gradient(-45deg, #f9c2eb, #a8c2ee, #c2f9d0, #ffdea5) fixed;
+    background-size: 800% 800%;
+    animation: GradietionAnimation 9s ease infinite;
+    width: 1900px;
+    height: 500px;
+    text-align: center;
+  }
+  @keyframes GradietionAnimation { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+
+.My p{
+    color:red;
+}
